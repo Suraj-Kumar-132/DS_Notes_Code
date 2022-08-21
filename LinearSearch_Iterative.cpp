@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-
+// Iterative Approach
 int main(){
     int num;
     cin>>num;

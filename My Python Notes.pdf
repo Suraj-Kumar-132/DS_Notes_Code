@@ -1,0 +1,343 @@
+Python tutorials
+
+►TimeStamps:
+Course Logistics: 00:00:00
+Chapter 0 - Introduction: 00:08:58
+Chapter 1 - Modules, Comments & Pip: 00:14:17
+Chapter 1 - Practice Set: 00:33:10
+Chapter 2 - Variables & Data Types: 00:44:35
+Chapter 2 - Practice Set: 01:25:10
+Chapter 3 - Strings: 01:39:10
+Chapter 3 - Practice Set: 02:16:56
+Chapter 4 - Lists & Tuples: 02:35:04
+Chapter 4 - Practice Set: 03:07:10
+Chapter 5 - Dictionary & Sets: 03:20:12
+Chapter 5 - Practice Set: 03:57:25
+Chapter 6 - Conditional Expressions: 04:19:21
+Chapter 6 - Practice Set: 04:48:53
+Chapter 7 - Loops in Python: 05:14:34
+Chapter 7 - Practice Set: 05:45:11
+Chapter 8 - Functions & Recursion: 06:07:35
+Chapter 8 - Practice Set: 06:36:28
+Project 1 - Snake, Water, Gun Game: 06:52:30
+Chapter 9 - File I/O: 07:06:55
+Chapter 9 - Practice Set: 07:28:11
+Chapter 10 - Object Oriented Programming: 08:08:38
+Chapter 10 - Practice Set: 09:17:22
+Chapter 11 - Inheritance: 09:48:30
+Chapter 11 - Practice Set: 10:55:24
+Project 2 - The Perfect Guess  11:37:01
+
+
+ To check python/pip version 
+ type python/pip --version in powershell
+ 
+ To use python as calculator
+ type python in powershell 
+ and to exit from calculator type exit() 
+ 
+ What is Python?
+Python is a simple and easy-to-understand language that feels like reading simple English. This Pseudo code (template) nature of Python makes it easy to learn and understandable for beginners.
+
+Features of Python:
+Easy to understand = Less development time
+Free and open source
+High-level language
+Portable – works on Windows/Linux/Mac
++ Fun to work with :)
+
+Installation
+
+Python can be easily installed from python.org
+
+When you click on the download button, python can be installed right after you complete the setup by executing the file for your platform.
+
+Chapter 1: Modules, Comments & Pip
+
+
+Modules
+A module is a file containing code written by somebody else (usually) which can be imported and used in our programs.(kisi or ke likha hua program hm se kar sakte hai)
+example -> import flask
+   import tensorflow
+   
+   Pip
+Pip is a package manager for python. You can use pip to install a module on your system.
+
+E.g., pip install flask (It will install flask module in your system)
+pip install tensorflow
+
+Types of modules
+There are two types of modules in Python:
+
+Built-in modules – Pre-installed in Python
+External modules – Need to install using pip
+Some examples of built-in modules are os, abc, etc.
+
+Some examples of external modules are TensorFlow, flask, etc.
+
+   
+Using Python as a Calculator
+
+We can use python as a calculator by typing “python” + TO DO on the terminal. [It opens REPL or read evaluation print loop]
+
+
+Comments
+
+There are two types of comments in python,
+
+Single line comments – Written using # (pound/hash symbol)
+Multi-line comments – Written using ‘’’ Comment ‘’’ or “”” Comment “””.
+
+Note -> Jb v print () me agar ek se jada line ka string ko print karna rehta hai to tb usko triple single quotes me likhte hai tb hi execute karta hai
+
+
+Question : Write a python program to print the contents of a directory using os module.
+ Solution: We can use os.listdir() to print the contents of a directory 
+ 
+  Code :
+  import os
+  print(os.listdir())
+   
+   output:
+    to jitne v file honge python wale uss folder me sabhi show karne lag jaiyenge
+	
+	
+  Chapter 2 – Variables and Data Types
+  
+  
+A variable is a name given to a memory location in a program. For example
+
+a=30
+
+b=”Harry”
+
+c=71.22
+Variable – Container to store a value
+
+Keywords – Reserved words in Python
+
+Identifiers – class/function/variable name
+
+Data Types:
+Primarily there are the following data types in Python:
+
+Integers
+Floating point numbers
+Strings
+Booleans  (True or Flase)
+None  ( Kuch nhi  return karne ke liye iska use karte hai )
+Python is a fantastic language that automatically identifies the type of data for us.
+
+a = 71                                    #Identifies a as class<int>
+
+b = 88.44                              #Identifies b as class<float>
+
+name = “Harry”                  #Identifies name as class<Str>
+Rules for defining a variable name: (Also applicable to other identifiers)
+
+A variable name can contain alphabets, digits, and underscore.
+A variable name can only start with an alphabet and underscore.
+A variable can’t start with a digit.
+No white space is allowed to be used inside a variable name.
+Examples of few valid variable names,
+
+Harry, harry, one8, _akki, aakash, harry_bro, etc.
+
+Note -> To know the type of any variable , we use type () in python
+a = 31
+
+print(type(a))                      #class<int>
+
+b = “31”
+
+print(type(b))                      #class<str>
+
+Operators in Python
+The following are some common operators in Python:
+
+Arithmetic Operators (+, -, *, /, etc.)
+Assignment Operators (=, +=, -=, etc.)
+Comparison Operators (==, >=, <=, >, <, !=, etc.)
+Logical Operators (and, or, not)
+
+
+Typecasting
+
+Str(31)           # ”31” Integer to string conversion
+
+int(“32”)       # 32 String to int conversion
+
+float(32)       #32.0 Integer to float conversion
+
+Here “31” is a string literal, and 31 is a numeric literal.
+
+input() function
+
+This function allows the user to take input from the keyboard as a string.
+
+a = input(“Enter name”)               #if a is “harry”, the user entered harry
+
+
+Note: The output of the input function is always a string even if the number is entered by the user.
+
+Suppose if a user enters 34, then this 34 will automatically convert to “34” string literal.
+ 
+
+Note: Each time a program is run the interpreter  checks through the code for errors and the interprets the instructions into machince - readable "bytecode"
+
+
+/ -> division(output in float)
+// -> division(output in int)
+** -> power 
+
+Python Math Functions
+
+ command name            Description
+ abs(value) 			absolute value
+ cell (value)				rounds up
+ gcd(value1, value2)          gcd of value1 and value2
+ floor(value)   				 rounds down
+ log (value) 				logarithm base e
+ log10(value)				logarithm base10
+ factorial(value)			factorial of value
+ pow(value1,value2)         value1 raised to power value2
+ cos(value) 					cosine in radians
+ sin(value)							sine in radians
+ sqrt(value) 			 square root
+ 
+ Note :  To use a function from a module
+ import module
+ 
+ example: import math
+ math.factorial(5)
+ -> 120
+ math.log10(100)
+ ->2
+ 
+ Now, we can create alias 
+ import math as m   (here we create alias of math as m )
+ now we can use m instead of math
+ example:
+ import math as m
+ m.factorial(5)
+ -> 120
+ m.log10(100)
+ ->2
+ 
+ Chapter 3 – Strings
+The string is a data type in Python.
+
+A string is a sequence of characters enclosed in quotes.
+
+We can primarily write a string in three ways:
+
+Single quoted strings : a = ‘harry’
+Double quoted strings : b = “harry”
+Triple quoted strings : c = ‘’’ harry ‘’’
+
+
+ String Slicing:
+A string in Python can be sliced for getting a part of the string.
+
+Consider the following string:
+
+https://api.codewithharry.com/media/videoSeriesFiles/courseFiles/python-tutorial-easy-for-beginners/StringSlicing1py.png
+
+The index in a string starts from 0 to (length-1) in Python. To slice a string,
+
+we can access the characters of string but we cant change the charachter in python.
+
+ we use the following syntax:
+ 
+ name = "Harry"
+ 
+ sl = name[ind_start(First index is included): ind_end(last index is not include)]
+ sl[0:3] returns "Har" --> characters from 0 to 3
+ sl[1:3] returns "ar" --> Charcters from 1 to 3
+ sl[ :4] return Harry --> is same as name[0:4]
+ sl[1:]   --> is same as name [1:5]
+ 
+ 
+ Negative Indices: Negative indices can also be used as shown in the figure above. -1 corresponds to the (length-1) index, -2 to (length-2).
+ 
+ 
+Slicing with skip value
+
+We can provide a skip value as a part of our slice like this:
+
+word = “amazing”
+
+word[1:6:2]           # It will return ’mzn’
+
+Other advanced slicing techniques
+word = ‘amazing’
+
+word[:7] or word[0:7]      #It will return ‘amazing’
+
+word[0:] or word[0:7]      #It will return ‘amazing’
+
+
+
+String Functions
+Some of the most used functions to perform operations on or manipulate strings are:
+
+len() function : It returns the length of the string.
+len(‘harry’)               #Returns 5
+endswith(“rry”) : This function tells whether the variable string ends with the string “rry” or not. If string is “harry”, it returns for “rry” since harry ends with rry.
+count(“c”) : It counts the total number of occurrences of any character and also count the substring in a string.
+capitalize() : This function capitalizes the first character of a given string.
+find(word) : This function finds a word and returns the index of first occurrence of that word in the string.
+replace(oldword, newword) : This function replaces the old word with the new word in the entire string.
+Escape Sequence Characters:
+Sequence of characters after backslash ‘\’ [Escape Sequence Characters]
+
+Escape Sequence Characters comprises of more than one character but represents one character when used within the string.
+
+Examples: \n (new line), \t (tab), \’ (single quote), \\ (backslash), etc.
+
+Chapter 4 – Lists and Tuples
+Python Lists are containers to store a set of values of any data type.
+
+friends = [‘Apple’, ‘Akash’, ‘Rohan’, 7, False]
+The list can contain different types of elements such as int, float, string, Boolean, etc. Above list is a collection of different types of elements.
+
+List Indexing
+A list can be index just like a string.
+
+L1 = [7, 9, ‘harry’]
+
+L1[0] – 7
+
+L1[1] – 9
+
+L1[70] – Error
+
+L1[0:2] – [7,9]         (This is known as List Slicing)
+List Methods
+Consider the following list:
+
+L1 = [1, 8, 7, 2, 21, 15]
+sort() – updates the list to [1,2,7,8,15,21]
+reverse() – updates the list to [15,21,2,7,8,1]
+append(8) – adds 8 at the end of the list
+insert(3,8) – This will add 8 at 3 index
+pop(2) – It will delete the element at index 2 and return its value
+remove(21) – It will remove 21 from the list
+
+Tuples in Python:
+A tuple is an immutable (can’t change or modified) data type in Python.
+
+a = ()              #It is an example of empty tuple
+
+a = (1,)           #Tuple with only one element needs a comma
+
+a = (1, 7, 2)   #Tuple with more than one element
+Once defined, tuple elements can’t be manipulated or altered.
+
+Tuple methods:
+
+Consider the following tuple,
+
+a = (1, 7, 2)
+count(1) – It will return the number of times 1 occurs in a.
+index(1) – It will return the index of the first occurrence of 1 in a.
